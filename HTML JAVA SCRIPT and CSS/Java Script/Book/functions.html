@@ -1,0 +1,140 @@
+<!-- Calling a function -->
+<!-- <html>
+    <head>
+        <script>
+            function sayHello()
+            {
+                document.write("Hello there!");
+            }
+        </script>
+    </head>
+    <body>
+        <p>Click the following button to call the function</p>
+        <form action="">
+            <input type="button" onclick="sayHello()" value="Say Hello">
+        </form>
+    </body>
+</html> -->
+
+
+<!-- Function Parameters -->
+<!-- <html>
+    <head>
+        <script>
+            function sayHello(name, age)
+            {
+                document.write(name + " is " + age + "years old.");
+            }
+        </script>
+    </head>
+    <body>
+        <p>Click the following button to call the function</p>
+        <form action="">
+            <input type="button" onclick="sayHello('Zara', 7)" value="Say Hello">
+        </form>
+    </body>
+</html> -->
+
+
+<!-- The return statement -->
+<!-- <html>
+    <head>
+        <script>
+            function concatenate(first, last){
+                var full;
+                full = first + last;
+                return full;
+            }
+            function secondFunction(){
+                var result;
+                result  = concatenate("Zara ", "Ali");
+                document.write(result);
+            }
+        </script>
+    </head>
+    <body>
+        <p>Click the following button to call the function</p>
+        <form action="]">
+            <input type="button" onclick="secondFunction()" value="Call Function">
+        </form>
+    </body>
+</html> -->
+
+
+<!-- Nested Functions -->
+<!-- <html>
+    <head>
+        <script>
+           function hypotenues(a, b){
+            function square(x){
+                return x * x;
+            }
+            return Math.sqrt(square(a) + square (b));
+           }
+           function secondFunction(){
+            var result ;
+            result = hypotenues(1, 2);
+            document.write(result);
+           }
+        </script>
+    </head>
+    <body>
+        <p>Click the following button to call the function</p>
+        <form action="">
+            <input type="button" onclick="secondFunction()" value="Call Function">
+        </form>
+    </body>
+</html> -->
+
+
+<!-- Function Constructor -->
+<!-- <script type="text/javascript">
+    var variablename = new Function(Arg1, Arg2..., "Function Body");
+</script>
+    The Function() constructor expects any number of string arguments. The last argument is the body of the function – 
+it can contain arbitrary JavaScript statements, separated from each other by semicolons.
+Notice that the Function() constructor is not passed any argument that specifies a name for the function it creates. 
+The unnamed functions created with the Function() constructor are called anonymous functions. -->
+
+<!-- <html>
+    <head>
+        <script>
+            var func = new Function("x", "y", "return x*y");
+
+            function secondFunction(){
+                var result;
+                result = func(10, 20);
+                document.write(result)
+            }
+        </script>
+    </head>
+    <body>
+        <p>Click the following button to call the function</p>
+        <form action="">
+            <input type="button" onclick="secondFunction()" value="Call Function">
+        </form>
+    </body>
+</html> -->
+
+
+<!-- Function Literals -->
+<!-- <html>
+   <head>
+    <script>
+        var func = function(x, y){
+            return x*y;
+        }
+        function secondFunction(){
+            var result;
+            result = func(10,20);
+            document.write(result);
+        }
+    </script>
+    <body>
+        <p>Click the following button to call the function</p>
+        <form action="">
+            <input type="button" onclick="secondFunction()" value="Call Function">
+        </form>
+    </body>
+   </head>
+</html> -->

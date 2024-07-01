@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>change inline/block</title>
+        <style type="text/css">
+            li {
+                display: inline; /*The display property allows you to turn an inline element into a block-level element 
+                or vice versa, and can also be used to hide an element from the page.*/
+                margin-right: 200px;}
+            li.coming-soon {
+                display: none;
+                /**visibility: hidden;
+                visible - This shows the element. If the visibility of an element is set to hidden, a blank space 
+                will appear in its place.**/}
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>Home</li>
+            <li>Products</li>
+            <li class="coming-soon">Services</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </body>
+</html>

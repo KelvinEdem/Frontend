@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Background Images</title>
+        <style type="text/css">
+            /* The image repeats to fill the entire page */
+            body{
+                background-image: url("Images/background texture.jpg");
+                background-repeat: repeat-x; /*Image is repeated horizontally and repeat-y means image is repeated vertically */
+                /* no-repeat means it should only show once and 
+                the attachment specifies whether the page should stay in one 
+                position or move. the attachment has two values namely, fixed and scroll */
+                background-repeat: no-repeat; 
+                background-attachment: fixed;   
+                background-position: center ;   
+                /* the background position has a list of values; left top, left center, left bottom, center top, center center,
+                center bottom, right top, right center, right bottom */
+
+                background-position: 50% 50% ;
+/* this is a vertical position. If you only specify one value, the second value will default to center.You can also use a pair 
+of pixels or percentages. These represent the distance from the top left corner of the browser window (or containing box). 
+The top left corner is equal to 0% 0%. The example shown, with values of 50% 50%, centers the image horizontally and vertically. */
+            }
+            .text{
+                color: white;
+            }
+            /* This is a background image for the paragraph */
+            /* p{
+                background-image: url("Images/background texture.jpg"); 
+                color: white; 
+            } */
+        </style>
+    </head>
+    <body>
+        <div class="text"><h1>Planting Guide</h1>
+            <h2>Magnolia</h2>
+            <p>Magnolia is a large genus that 
+                contains over 200 flowering plant species. It 
+                is named after French botanist Pierre Magnol and, 
+                having evolved before bees appeared, the 
+                flowers were developed to encourage pollination 
+                by beetle. Magnolia is a large genus that 
+                contains over 200 flowering plant species. It 
+                is named after French botanist Pierre Magnol and, 
+                having evolved before bees appeared, the 
+                flowers were developed to encourage pollination 
+                by beetle.Magnolia is a large genus that 
+                contains over 200 flowering plant species. It 
+                is named after French botanist Pierre Magnol and, 
+                having evolved before bees appeared, the 
+                flowers were developed to encourage pollination 
+                by beetle.</p></div>
+        
+    </body>
+</html>

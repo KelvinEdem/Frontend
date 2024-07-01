@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table Properties</title>
+        <style type="text/css">
+            body{
+                font-family: Arial, Verdana, sans-serif;
+            }
+            table{
+                width: 620px;
+            }
+            th,td{
+                padding: 7px 10px 10px 10px;
+            }
+            th{
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                font-size: 90%;
+                border-bottom: 2px solid;
+                border-top: 1px solid;
+                text-align: left;
+                /* empty-cells: hide; 
+                If you have empty cells in your table, then you can use the empty-cells property to specify whether or not their borders should be shown.*/
+            }
+            tr.even{
+                background-color: #efefef;
+            }
+            tr:hover{
+                background-color: #c3e6e5;
+            }
+            .money{
+                text-align: right;
+            }
+            table.money{
+                empty-cells: hide;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>First Edition Auction</h1>
+        <table>
+            <tr>
+                <th>Author</th>
+                <th>Title</th>
+                <th>Reserve Price</th>
+                <th>Current Bids</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>E.E. Cummings</td>
+                <td>Tulips & Chimneys</td>
+                <td class="money">$2,000.00</td>
+                <td class="money">$2,642.50</td>
+            </tr>
+            <tr class="even">
+                <td>Charles d'Orleans</td>
+                <td>Poemes</td>
+                <td class="money"></td>
+                <td class="money">$5,866.00</td>
+            </tr>
+            <tr>
+                <td>T.S. Eliot</td>
+                <td>Poems 1909 - 1925</td>
+                <td class="money">$1,250.00</td>
+                <td class="money">$8,499.35</td>
+            </tr>
+            <tr class="even">
+                <td>Sylvia Plath</td>
+                <td>The Colossus</td>
+                <td class="money"></td>
+                <td class="money">$1031.72</td>
+            </tr>
+        </table>
+    </body>
+</html>

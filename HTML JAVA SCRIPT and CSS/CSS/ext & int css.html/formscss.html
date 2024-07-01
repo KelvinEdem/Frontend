@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>forms css</title>
+    <style type="text/css">
+        input {
+            padding: 6px 12px 6px 12px;
+            border: 1px solid #e92910;
+            }
+        input:hover {
+            background-color: #6013dd;
+            color: rgb(231, 224, 224)}
+        input:active { /*the color that appears when a button is being clicked*/
+            background-color: rgb(159, 30, 210);}
+        input.text {
+            color: #0f0f0f;}
+        input.text:focus {
+            color: #665544;}
+    </style>
+    <body>
+        <form action="http://www.example.org/subscribe.php"><!--Email and URL Input-->
+            
+            <input type="email" name="email" placeholder="Enter email address"/>
+            <input type="Submit" value="Submit"/>
+        </form><br/>
+    </body>
+</head>
